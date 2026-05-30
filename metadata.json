@@ -1,0 +1,8 @@
+{
+  "name": "Asisten Administrasi Madrasah Merdeka",
+  "description": "Asisten administrasi guru madrasah profesional untuk menjabarkan CP menjadi TP, ATP, Prota, Promes, serta Buku Kerja 1-4 sesuai KMA Nomor 450 Tahun 2024.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
