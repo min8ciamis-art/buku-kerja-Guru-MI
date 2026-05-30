@@ -84,7 +84,7 @@ export default function PreviewDoc({ data, identitas, activeTab, setActiveTab }:
         {identitas.namaMadrasah.toUpperCase()}
       </h3>
       <p className="font-sans text-xs italic text-slate-500 print:text-black print:not-italic mt-1">
-        Jalan Madrasah No. 450, Tahun Pelajaran {identitas.tahunPelajaran} — Terakreditasi Unggul
+        Jalan Madrasah No. 1503, Tahun Pelajaran {identitas.tahunPelajaran} — Terakreditasi Unggul
       </p>
     </div>
   );
@@ -258,7 +258,7 @@ export default function PreviewDoc({ data, identitas, activeTab, setActiveTab }:
             <div className="bg-slate-50 border border-slate-100 p-4 rounded-xl text-xs text-slate-500 leading-relaxed flex gap-2">
               <Info className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
               <span>
-                <strong>Prinsip ATP:</strong> Materi disusun secara berurutan dan logis dari konkret ke abstrak, serta dilengkapi dengan penguatan karakter Profil Pelajar Pancasila Rahmatan lil Alamin (P5-PPRA) khas Madrasah KMA 450/2024.
+                <strong>Prinsip ATP:</strong> Materi disusun secara berurutan dan logis dari konkret ke abstrak, serta dilengkapi dengan penguatan karakter Profil Pelajar Pancasila Rahmatan lil Alamin (P5-PPRA) khas Madrasah KMA 1503/2025 yang menekankan Pembelajaran Mendalam dan Kurikulum Berbasis Cinta.
               </span>
             </div>
 

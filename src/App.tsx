@@ -46,8 +46,8 @@ export default function App() {
   // Step names for animated progress loader
   const stepTexts = [
     'Mendiagnosis kompetensi utama & materi pokok dari teks CP...',
-    'Menyelaraskan dengan rujukan regulasi KMA Nomor 450 Tahun 2024...',
-    'Mengintegrasikan nilai-nilai Moderasi Beragama & Rahmatan Lil Alamin (PPRA)...',
+    'Menyelaraskan dengan rujukan regulasi KMA Nomor 1503 Tahun 2025 (Kurikulum Berbasis Cinta)...',
+    'Mengintegrasikan Pembelajaran Mendalam (Berkesadaran, Bermakna, Menggembirakan)...',
     'Membuat pemetaan Program Tahunan (PROTA) berdasarkan alokasi minggu efektif...',
     'Menyebarkan Jam Pelajaran (JP) ke dalam template kalender Program Semester (PROMES)...',
     'Menyusun kerangka pembelajaran interaktif Madrasah di Buku Kerja 1...',
@@ -145,7 +145,7 @@ export default function App() {
 
             <div className="mb-6">
               <span className="bg-emerald-600/10 text-[10.5px] font-bold tracking-wider px-2.5 py-1 rounded-md text-emerald-400 border border-emerald-500/10 block text-center uppercase">
-                🏁 KMA 450/2024
+                🏁 KMA 1503/2025
               </span>
             </div>
 
@@ -190,7 +190,7 @@ export default function App() {
             <div className="bg-slate-800/45 rounded-2xl p-4 border border-slate-800/60">
               <p className="text-[10px] uppercase tracking-wider text-slate-500 font-bold mb-1.5">Regulasi Terkait</p>
               <p className="text-[11px] text-slate-400 leading-relaxed">
-                Sesuai Keputusan KMA No. 450 Tahun 2024 & Panduan (PPA) Kemenag RI terbaru.
+                Sesuai Keputusan KMA No. 1503 Tahun 2025 tentang Kurikulum Madrasah (Pembelajaran Mendalam & Berbasis Cinta).
               </p>
             </div>
           </div>

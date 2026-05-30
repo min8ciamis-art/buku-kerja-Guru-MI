@@ -67,31 +67,36 @@ export default function InputForm({
 
   return (
     <div id="form-container" className="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-6 space-y-6">
-      {/* Subject Preset Selector */}
-      <div>
-        <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
-          PILIH TEMPLATE MATA PELAJARAN MADRASAH
-        </label>
+      {/* Subject Preset Selector - Focused on MI Fase A, B, C */}
+      <div className="bg-emerald-50/40 border border-emerald-100/80 rounded-2xl p-4 space-y-3">
+        <div className="flex items-center justify-between">
+          <label className="block text-xs font-bold text-emerald-800 uppercase tracking-wider">
+            TEMPLATE MATA PELAJARAN MI (FASE A / B / C)
+          </label>
+          <span className="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+            Fokus Utama MI
+          </span>
+        </div>
         <div className="relative">
           <select
             id="preset-select"
             onChange={handleSelectPreset}
             defaultValue=""
-            className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 text-slate-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition text-sm cursor-pointer"
+            className="w-full px-4 py-3 bg-white border-2 border-emerald-300 text-emerald-950 rounded-xl focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-600 outline-none transition-all duration-200 text-sm cursor-pointer font-semibold shadow-sm hover:border-emerald-400"
           >
-            <option value="" disabled>-- Pilih mata pelajaran (Opsional untuk Autocomplete) --</option>
+            <option value="" disabled>✨ -- Pilih Template Utama MI Fase A/B/C (KMA 1503) -- ✨</option>
             {PRESETS_MAPEL.map((p) => (
-              <option key={p.id} value={p.id}>
-                {p.mataPelajaran} - Fase {p.fase} ({p.kelas})
+              <option key={p.id} value={p.id} className="text-slate-800 font-medium py-1">
+                📖 {p.mataPelajaran}
               </option>
             ))}
           </select>
-          <div className="absolute right-3 top-3 pointer-events-none">
-            <Sparkles className="w-4 h-4 text-emerald-500 animate-pulse" />
+          <div className="absolute right-3 top-3.5 pointer-events-none">
+            <Sparkles className="w-4 h-4 text-emerald-600 animate-pulse" />
           </div>
         </div>
-        <p className="text-[11px] text-slate-400 mt-1.5 leading-relaxed">
-          *Memilih template akan otomatis mengisi Identitas, Alokasi JP, dan rumusan Capaian Pembelajaran standar Kemenag.
+        <p className="text-[11px] text-emerald-700/80 leading-relaxed font-sans">
+          📌 <strong>Fokus Sistem KMA 1503/2025:</strong> Dioptimalkan untuk jenjang Madrasah Ibtidaiyah (MI) Fase A, B, dan C, menerapkan prinsip <em>Pembelajaran Mendalam</em> dan <em>Kurikulum Berbasis Cinta</em>.
         </p>
       </div>
 
@@ -136,14 +141,11 @@ export default function InputForm({
               id="fase"
               value={identitas.fase}
               onChange={(e) => handleIdentitasChange('fase', e.target.value as any)}
-              className="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/20 outline-none transition cursor-pointer"
+              className="w-full px-3 py-2 border-2 border-emerald-200 rounded-lg text-sm focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/10 outline-none transition cursor-pointer font-semibold text-emerald-900 bg-emerald-50/20"
             >
-              <option value="A">A (Kl. 1-2)</option>
-              <option value="B">B (Kl. 3-4)</option>
-              <option value="C">C (Kl. 5-6)</option>
-              <option value="D">D (Kl. 7-9)</option>
-              <option value="E">E (Kl. 10)</option>
-              <option value="F">F (Kl. 11-12)</option>
+              <option value="A">⭐ Fase A (Kelas 1-2 MI)</option>
+              <option value="B">⭐ Fase B (Kelas 3-4 MI)</option>
+              <option value="C">⭐ Fase C (Kelas 5-6 MI)</option>
             </select>
           </div>
           <div>
@@ -332,7 +334,7 @@ export default function InputForm({
         <div className="flex items-start gap-1 p-2 bg-emerald-50 border border-emerald-100 rounded-lg text-emerald-800 text-[11px] leading-relaxed">
           <Sparkles className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
           <span>
-            <strong>Rekomendasi Pintar:</strong> Anda bisa menyalin teks CP dari Panduan Kemenag/KMA 450 Tahun 2024 atau menggunakan template mata pelajaran di bagian atas.
+            <strong>Rekomendasi Pintar:</strong> Anda bisa menyalin teks CP dari Panduan Kemenag/KMA 1503 Tahun 2025 atau menggunakan template mata pelajaran di bagian atas.
           </span>
         </div>
       </div>
@@ -349,7 +351,7 @@ export default function InputForm({
         }`}
       >
         <Sparkles className={`w-5 h-5 ${isLoading ? 'animate-spin' : ''}`} />
-        {isLoading ? 'Sedang Mem-breakdown CP...' : 'Generate Dokumen Administrasi (KMA 450/2024)'}
+        {isLoading ? 'Sedang Mem-breakdown CP...' : 'Generate Dokumen Administrasi (KMA 1503/2025)'}
       </button>
     </div>
   );

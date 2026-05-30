@@ -15,48 +15,129 @@ export interface PresetMapel {
 
 export const PRESETS_MAPEL: PresetMapel[] = [
   {
-    id: "qurdis-fase-d",
-    mataPelajaran: "Al-Qur'an Hadis",
-    fase: "D",
-    kelas: "VII / Ganjil & Genap",
-    jpPerMinggu: 2,
-    namaMadrasahDefault: "MTs Negeri 1 Model",
-    teksCP: "Elemen Al-Qur'an:\nPeserta didik mampu membaca, menghafal, menganalisis, dan melafalkan ayat Al-Qur'an tentang pentingnya menjaga kelestarian lingkungan hidup dan hubungannya dengan kehidupan sehari-hari secara tartil dan fasih. Peserta didik juga mampu memahami hukum bacaan Qalqalah, Mad Thabi'i, dan Mad Far'i agar dapat membaca Al-Qur'an dengan benar.\n\nElemen Hadis:\nPeserta didik mampu memahami, menghafal, dan mengamalkan hadis riwayat Muslim tentang keutamaan menuntut ilmu dan hadis riwayat Bukhari tentang pentingnya menjaga hubungan silaturahmi dengan sesama manusia dalam kehidupan berbangsa dan bernegara."
+    id: "pancasila-mi-b",
+    mataPelajaran: "Pendidikan Pancasila",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 4,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Pancasila:\nPeserta didik mampu mengidentifikasi dan mempraktikkan nilai-nilai luhur Pancasila dalam kehidupan sehari-hari (gotong royong, keadilan, kebersamaan). Melalui pilar cinta tanah air, menumbuhkan rasa bangga dan nasionalisme islami yang damai.\n\nElemen NKRI:\nPeserta didik mampu menjelaskan identitas diri, keluarga, dan lingkungan sekitar dalam bingkai kebhinekaan serta melatih kepedulian sosial berkesadaran tinggi."
   },
   {
-    id: "akidah-fase-d",
-    mataPelajaran: "Akidah Akhlak",
-    fase: "D",
-    kelas: "VIII / Ganjil & Genap",
-    jpPerMinggu: 2,
-    namaMadrasahDefault: "MTs Darul Ulum",
-    teksCP: "Elemen Akidah:\nPeserta didik mampu menganalisis sifat-sifat wajib, mustahil, dan jaiz bagi Allah SWT beserta dalil naqli dan aqli. Melalui pemahaman asmaul husna (Al-Ghaffar, Al-Afuw, Al-Hakim), peserta didik mampu memperteguh keyakinan akan kebesaran Allah SWT dalam kehidupan kontekstual.\n\nElemen Akhlak:\nPeserta didik mampu mengidentifikasi dan menghindari akhlak tercela (riya, nifak, khianat) serta membiasakan akhlak terpuji (ikhlas, tawakal, ikhtiar, sabar, syukur) dalam interaksi sosial sehari-hari dengan menjunjung tinggi nilai moderasi beragama."
+    id: "indo-mi-b",
+    mataPelajaran: "Bahasa Indonesia",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 4,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Membaca & Memirsa:\nPeserta didik memahami gagasan utama dan penjelas dari teks deskripsi dan narasi. Mampu membaca lancar dengan lafal dan intonasi tepat, menyerap pesan moral welas asih dan empati sosial.\n\nElemen Menulis:\nPeserta didik terampil mengekspresikan ide, perasaan, dan imajinasinya dalam paragraf sederhana terstruktur dengan penuh kegembiraan dan berkesadaran."
   },
   {
-    id: "fikih-fase-c",
-    mataPelajaran: "Fikih",
-    fase: "C",
-    kelas: "V / Ganjil & Genap",
+    id: "matematika-mi-b",
+    mataPelajaran: "Matematika",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 4,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Bilangan:\nPeserta didik memahami nilai tempat bilangan cacah hingga 10.000, melakukan operasi penjumlahan, pengurangan, perkalian, pecahan sederhana dengan metode konkret yang fungsional dan bermakna.\n\nElemen Geometri & Pengukuran:\nPeserta didik mampu membandingkan panjang, berat, derajat sudut benda nyata di lingkungan madrasah secara interaktif."
+  },
+  {
+    id: "ipas-mi-b",
+    mataPelajaran: "Ilmu Pengetahuan Alam dan Sosial (IPAS)",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 4,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Sains (IPA):\nPeserta didik mengamati dan melestarikan bagian tubuh tumbuhan serta hewan di lingkungan sekolah. Menumbuhkan kesadaran ekoteologi cinta alam ciptaan Allah SWT.\n\nElemen Sosial (IPS):\nPeserta didik mengapresiasi keragaman sosial budaya di wilayah kabupaten/kita dalam bingkai moderasi beragama."
+  },
+  {
+    id: "inggris-mi-b",
+    mataPelajaran: "Bahasa Inggris",
+    fase: "B",
+    kelas: "III & IV (MI)",
     jpPerMinggu: 2,
     namaMadrasahDefault: "MI Negeri 8 Ciamis",
-    teksCP: "Elemen Ibadah:\nPeserta didik mampu memahami dan menganalisis ketentuan bersuci dari hadas besar (mandi wajib), hukum khitan bagi laki-laki dan perempuan, serta syarat dan rukun ibadah puasa Ramadhan maupun puasa sunnah. Peserta didik dapat mempraktikkan ibadah tersebut dengan benar sesuai tuntunan syariat.\n\nElemen Muamalah:\nPeserta didik memahami konsep dasar kepemilikan, jual beli dalam Islam, serta ketentuan sedekah, hibah, dan hadiah sebagai wujud kepedulian sosial terhadap sesama umat manusia."
+    teksCP: "Elemen Listening & Speaking:\nPeserta didik mampu berinteraksi menggunakan ungkapan santun sederhana (perkenalan, menyapa, berterima kasih) guna membangun kepercayaan diri sosial global.\n\nElemen Reading & Writing:\nPeserta didik mengenali kosakata tentang hobi, keluarga, dan benda kelas melalui nyanyian dan permainan komunikatif yang menggembirakan."
   },
   {
-    id: "ski-fase-d",
+    id: "pjok-mi-b",
+    mataPelajaran: "Pendidikan Jasmani, Olahraga, dan Kesehatan (PJOK)",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 3,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Keterampilan Gerak:\nPeserta didik mempraktikkan variasi gerak lokomotor, non-lokomotor, dan manipulatif dalam olahraga tradisional maupun modern secara bugar dan sportif.\n\nElemen Perilaku Sehat:\nPeserta didik membiasakan menjaga kebersihan diri, merawat tubuh, serta gizi seimbang sebagai bentuk bersyukur atas nikmat kesehatan dari Allah SWT."
+  },
+  {
+    id: "senibudaya-mi-b",
+    mataPelajaran: "Seni dan Budaya",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 3,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Apresiasi Seni:\nPeserta didik mampu mengeksplorasi garis, warna, bentuk dasar dalam membuat prakarya atau seni rupa sederhana yang bermakna estetis islami.\n\nElemen Ekspresi:\nPeserta didik dapat menyanyikan lagu nasional, daerah, maupun lagu religi madrasah dengan intonasi harmonis penuh kegembiraan batin (Joyful Learning)."
+  },
+  {
+    id: "qurdis-mi-b",
+    mataPelajaran: "Al-Qur'an Hadis",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 2,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Al-Qur'an:\nPeserta didik mampu membaca Al-Qur'an secara tartil khususnya surah-surah pendek pilihan (Ad-Duha sampai Al-Humazah), memahami hukum tajwid dasar (alif lam syamsiyah dan qamariyah, idzhar, ikhfa) dengan rasa cinta mendalam.\n\nElemen Hadis:\nPeserta didik menghafal hadis tentang niat dan hadis persahabatan guna membangun karakter berwelas asih (KBC)."
+  },
+  {
+    id: "akidah-mi-b",
+    mataPelajaran: "Akidah Akhlak",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 2,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Akidah:\nPeserta didik meyakini rukun iman, asmaul husna (As-Sami', Al-Bashir), sifat mulia malaikat Allah untuk membangun rasa bersyukur (Teologi Cinta).\n\nElemen Akhlak:\nPeserta didik membiasakan akhlak terpuji (hormat, patuh, kasih sayang kepada orang tua, guru, teman) dan menjauhi perundungan (anti-bullying)."
+  },
+  {
+    id: "fikih-mi-b",
+    mataPelajaran: "Fikih",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 2,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Ibadah:\nPeserta didik memahami ketentuan shalat berjamaah, shalat jamak qashar, serta hikmah berpuasa Ramadhan sebagai bentuk ekspresi pengabdian penuh kerinduan kepada Allah.\n\nElemen Akhlak Ibadah:\nPeserta didik senang mengamalkan dzikir dan doa sesudah shalat secara khusyuk bersandarkan cinta ilahi."
+  },
+  {
+    id: "ski-mi-b",
     mataPelajaran: "Sejarah Kebudayaan Islam (SKI)",
-    fase: "D",
-    kelas: "IX / Ganjil & Genap",
+    fase: "B",
+    kelas: "III & IV (MI)",
     jpPerMinggu: 2,
-    namaMadrasahDefault: "MTs Nurul Huda",
-    teksCP: "Elemen Kebudayaan Islam Klasik:\nPeserta didik mampu menganalisis sejarah perkembangan dakwah Rasulullah SAW pada periode Makkah dan Madinah, serta kepemimpinan Khulafaur Rasyidin yang mencerminkan keteguhan iman dan moderasi beragama.\n\nElemen Nusantara:\nPeserta didik mampu menganalisis sejarah masuknya Islam di Nusantara melalui perdagangan, perkawinan, pengajaran, dan akulturasi budaya lokal serta peran Walisongo dalam menyebarkan Islam yang damai dan inklusif."
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Jazirah Arab:\nPeserta didik mengenal keadaan alam dan sosial masyarakatArab sebelum Islam sebagai hikmah dan pelajaran sejarah masa lampau.\n\nElemen Dakwah Rasulullah:\nPeserta didik keteladanan akhlak mulia Nabi Muhammad SAW dalam menyebarkan perdamaian, persaudaraan, dan sifat pemaaf di awal dakwah beliau."
   },
   {
-    id: "arabic-fase-a",
+    id: "arabic-mi-b",
     mataPelajaran: "Bahasa Arab",
-    fase: "A",
-    kelas: "II / Ganjil & Genap",
+    fase: "B",
+    kelas: "III & IV (MI)",
     jpPerMinggu: 2,
-    namaMadrasahDefault: "MI Al-Hikmah",
-    teksCP: "Elemen Istima' (Mendengar):\nPeserta didik mampu mendengarkan, mengenali, dan membedakan bunyi kosakata bahasa Arab sederhana terkait topik perkenalan (al-ta'aruf) dan peralatan madrasah (al-adawat al-madrasasiah) dengan makhraj yang fasih.\n\nElemen Kalam (Berbicara):\nPeserta didik mampu mengucapkan dialek ungkapan harian sederhana, menyapa, mengenalkan diri, serta bertanya-jawab secara lisan mengenai benda-benda di sekitar kelas dengan rasa percaya diri."
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Istima' & Kalam:\nPeserta didik melafalkan kosakata bahasa Arab tentang peralatan sekolah, nama pelajaran, dan keluarga dekat secara komunikatif.\n\nElemen Qira'ah & Kitabah:\nPeserta didik mengenali dan menyalin kalimat sederhana secara estetis penuh kesadaran pembelajaran bermakna."
+  },
+  {
+    id: "koding-mi-b",
+    mataPelajaran: "Koding",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 2,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Logika & Algoritma:\nPeserta didik memahami konsep runutan logika sederhana, arah, langkah terstruktur melalui permainan visual blok kode (Scratch Jr) yang menyenangkan.\n\nElemen Pemecahan Masalah:\nPeserta didik mengasah ketekunan secara kolaboratif memecahkan tantangan game petualangan, memperteguh pilar cinta ilmu dan kreativitas digital."
+  },
+  {
+    id: "sunda-mi-b",
+    mataPelajaran: "Bahasa Sunda",
+    fase: "B",
+    kelas: "III & IV (MI)",
+    jpPerMinggu: 2,
+    namaMadrasahDefault: "MI Negeri 8 Ciamis",
+    teksCP: "Elemen Regepan & Nyarita:\nPeserta didik mahir ngaregepkeun carita pondok atawa dongéng Sunda nu ngandung papatah asih, sarta nyarita ngagunakeun basa lemes ka kolot jeung guru dina kahirupan sapopoé.\n\nElemen Maca & Nulis:\nPeserta didik mikawanoh istilah sabudeureun kulawarga, pakakas dapur, jeung ngajaga kaséhatan salaku bukti cinta diri jeung sasama."
   }
 ];
