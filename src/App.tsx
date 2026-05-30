@@ -85,8 +85,33 @@ export default function App() {
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Terjadi kesalahan internal.');
+        let errorMsg = 'Terjadi kesalahan internal.';
+        const contentType = response.headers.get('content-type');
+        if (contentType && contentType.includes('application/json')) {
+          try {
+            const errorData = await response.json();
+            errorMsg = errorData.error || errorMsg;
+          } catch (e) {
+            errorMsg = `Server error (Status ${response.status})`;
+          }
+        } else {
+          try {
+            const textMsg = await response.text();
+            errorMsg = textMsg.length < 200 ? textMsg : `Server error (Status ${response.status})`;
+          } catch (e) {
+            errorMsg = `Server error (Status ${response.status})`;
+          }
+        }
+        throw new Error(errorMsg);
+      }
+
+      const contentType = response.headers.get('content-type');
+      if (!contentType || !contentType.includes('application/json')) {
+        try {
+          const textMsg = await response.text();
+          console.error('Non-JSON response:', textMsg);
+        } catch (e) {}
+        throw new Error('Server tidak mengembalikan format JSON yang valid. Silakan coba lagi.');
       }
 
       const data: FullMerdekaResponse = await response.json();

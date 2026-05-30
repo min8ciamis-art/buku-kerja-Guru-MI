@@ -101,6 +101,28 @@ ${teksCP}
 
 Hasilkan data JSON dengan skema yang diberikan. Berikan uraian yang profesional, rinci, bebas dari placeholder [W1] dan sejenisnya jika kemungkinan, tulislah dengan konten lengkap yang berkualitas tinggi siap pakai oleh pengawas madrasah.`;
 
+      const ganjilProperties: Record<string, any> = {};
+      const ganjilMonths = ['Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+      ganjilMonths.forEach((m) => {
+        for (let w = 1; w <= 5; w++) {
+          ganjilProperties[`${m}-W${w}`] = {
+            type: Type.STRING,
+            description: `Alokasi JP atau UH/STS/SAS pada ${m} Minggu ke-${w}. Kosongkan jika tidak ada JP.`,
+          };
+        }
+      });
+
+      const genapProperties: Record<string, any> = {};
+      const genapMonths = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni'];
+      genapMonths.forEach((m) => {
+        for (let w = 1; w <= 5; w++) {
+          genapProperties[`${m}-W${w}`] = {
+            type: Type.STRING,
+            description: `Alokasi JP atau UH/STS/SAS pada ${m} Minggu ke-${w}. Kosongkan jika tidak ada JP.`,
+          };
+        }
+      });
+
       const response = await client.models.generateContent({
         model: 'gemini-3.5-flash',
         contents: promptUser,
@@ -209,7 +231,8 @@ Hasilkan data JSON dengan skema yang diberikan. Berikan uraian yang profesional,
                         alokasiWaktu: { type: Type.INTEGER },
                         distribusi: {
                           type: Type.OBJECT,
-                          description: 'Pemetaan JP per minggu. Contoh key: "Bulan-W1": "2", "Bulan-W2": "UH", "Bulan-W3": "STS", "Bulan-W4": "" (kosong jika tidak ada JP).',
+                          description: 'Pemetaan JP per minggu.',
+                          properties: ganjilProperties,
                         },
                       },
                     },
@@ -236,7 +259,8 @@ Hasilkan data JSON dengan skema yang diberikan. Berikan uraian yang profesional,
                         alokasiWaktu: { type: Type.INTEGER },
                         distribusi: {
                           type: Type.OBJECT,
-                          description: 'Pemetaan JP per minggu. Contoh key: "Bulan-W1": "2", "Bulan-W2": "UH", "Bulan-W3": "SAS", "Bulan-W4": "" (kosong jika tidak ada JP).',
+                          description: 'Pemetaan JP per minggu.',
+                          properties: genapProperties,
                         },
                       },
                     },
